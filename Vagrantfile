@@ -109,5 +109,7 @@ Vagrant.configure("2") do |config|
     add-apt-repository ppa:fkrull/deadsnakes
     apt-get update
     apt-get install -y python2.7 python-setuptools
+    exit
+    touch .npmrc && echo registry=http://futuremedia:8085/repository/npm-remote >> .npmrc
  SHELL
 end
